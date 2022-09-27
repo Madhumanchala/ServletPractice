@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ShehzaadBOOK</title>
+</head>
+<body>
+
+<h1>Welcome</h1>
+<p>Please Log In<p>
+<script>
+	function myFunction(){
+		window.location.href="getpassword.html";
+	}
+</script>
+
+<script>
+	function myFunctions(){
+		window.location.href="changePassword.jsp";
+	}
+</script>
+
+<form action="ViewServlet" onsubmit="return validateForm()">
+<table>
+<tr><td>Name:</td><td><input type="text" name="name" required/></td></tr>
+<tr><td>Password:</td><td><input type="password" name="password" required/></td></tr>
+<tr><td><input type="submit" value="Log in"></td>
+<td colspan="2"><input type="submit" value="Forgot Password" onClick="myFunction()"></td></tr>
+<td colspan="2"><input type="submit" value="Change Password" onClick="myFunctions()"></td></tr>
+
+</table>
+</form>
+<p align="left">Please <a href="index.html">Register ,</a></p>
+</center>	
+</body>
+
+</html>

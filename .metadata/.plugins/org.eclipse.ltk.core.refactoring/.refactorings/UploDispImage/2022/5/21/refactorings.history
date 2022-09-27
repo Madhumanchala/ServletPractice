@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 packages to &apos;Dispshowimage/src/main/java&apos;&#x0A;- Original project: &apos;UploDispImage&apos;&#x0A;- Destination element: &apos;Dispshowimage/src/main/java&apos;&#x0A;- Original elements:&#x0A;     UploDispImage/src/main/java/controller&#x0A;     UploDispImage/src/main/java/pojo&#x0A;     UploDispImage/src/main/java/connectivity&#x0A;     UploDispImage/src/main/java/dao&#x0A;     UploDispImage/src/main/java/test" description="Copy packages" destination="=Dispshowimage/src\/main\/java" element1="/src\/main\/java&lt;controller" element2="/src\/main\/java&lt;pojo" element3="/src\/main\/java&lt;connectivity" element4="/src\/main\/java&lt;dao" element5="/src\/main\/java&lt;test" flags="589830" fragments="5" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1652871930725" version="1.0"/>
+</session>

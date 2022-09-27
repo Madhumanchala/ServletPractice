@@ -1,0 +1,134 @@
+package pojo;
+
+import java.io.InputStream;
+
+import javax.servlet.http.Part;
+
+
+public class EmployeeDetails {
+
+	private int id;
+	private String firstName;
+	private String lastName;
+	private String adress;
+	private String designmation;
+	private Part filePart;
+	private java.sql.Blob image;
+	private InputStream inputstream;
+	private String base64Image;
+
+	public EmployeeDetails() {
+		super();
+	}
+
+	public EmployeeDetails(int id, String firstName, String lastName, String adress, String designmation,
+			InputStream inputstream) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.adress = adress;
+		this.designmation = designmation;
+		this.inputstream = inputstream;
+	}
+
+	public EmployeeDetails(String firstName, String lastName, String adress, String designmation,
+			InputStream inputstream) {
+		super();
+
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.adress = adress;
+		this.designmation = designmation;
+		this.inputstream = inputstream;
+	}
+
+	public EmployeeDetails(String firstName, String lastName, String adress, String designmation, String base64Image) {
+		super();
+
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.adress = adress;
+		this.designmation = designmation;
+		this.base64Image = base64Image;
+	}
+
+	public String getBase64Image() {
+		return base64Image;
+	}
+
+	public void setBase64Image(String base64Image) {
+		this.base64Image = base64Image;
+	}
+
+	public InputStream getInputstream() {
+		return inputstream;
+	}
+
+	public void setInputstream(InputStream inputstream) {
+		this.inputstream = inputstream;
+	}
+
+	public Part getFilePart() {
+		return filePart;
+	}
+
+	public void setFilePart(Part filePart) {
+		this.filePart = filePart;
+	}
+
+	public java.sql.Blob getImage() {
+		return image;
+	}
+
+	public java.sql.Blob setImage(java.sql.Blob blob) {
+		return this.image = blob;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getAdress() {
+		return adress;
+	}
+
+	public void setAdress(String adress) {
+		this.adress = adress;
+	}
+
+	public String getDesignmation() {
+		return designmation;
+	}
+
+	public void setDesignmation(String designmation) {
+		this.designmation = designmation;
+	}
+
+	@Override
+	public String toString() {
+		return "EmployeeDetails [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", adress="
+				+ adress + ", designmation=" + designmation + ", base64Image=" + base64Image + "]";
+	}
+
+}

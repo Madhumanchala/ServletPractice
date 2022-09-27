@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/comunus-user33/Downloads/ShehzaadBOOK"/>
+			<item value="/home/comunus-user33/Downloads/elibraryservlet"/>
+			<item value="/home/comunus-user33/Downloads/todo-application-jsp-servlet-jdbc-mysql-master"/>
+			<item value="/home/comunus-user33/Downloads/Servlet-Jsp-Ecommerce-website-master"/>
+			<item value="/home/comunus-user33/Downloads/Ecommerce-Website-master"/>
+			<item value="/home/comunus-user33/Downloads/downservlet"/>
+			<item value="/home/comunus-user33/Downloads/jspcrudapp/JSPCrud"/>
+			<item value="/home/comunus-user33/Pictures/Servlet JSP /FileUploadDatabase"/>
+			<item value="/home/comunus-user33/Downloads/jsp-servlet-jdbc-mysql-crud-tutorial-master (1)"/>
+			<item value="/home/comunus-user33/Downloads/hiddenformfield"/>
+			<item value="/home/comunus-user33/Downloads/spring-boot-rest-api-tutorial-master"/>
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="true"/>
+		<item key="DIALOG_WIDTH" value="490"/>
+		<item key="DIALOG_HEIGHT" value="386"/>
+		<item key="DIALOG_FONT_NAME" value="1|Inter|10.0|0|GTK|1|"/>
+	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="/home/comunus-user33/Documents/ServletPractice"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/comunus-user33/Downloads/todo-application-jsp-servlet-jdbc-mysql-master"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="344"/>
+		<item key="DIALOG_Y_ORIGIN" value="16"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

@@ -1,0 +1,25 @@
+INDEX VERSION 1.4+C:\EclipseWorkspaces\ServletPractice\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+258374291.index
+45664146.index
+3347879488.index
+669354384.index
+510163668.index
+2566025468.index
+1426938356.index
+529206564.index
+1179119940.index
+2335632511.index
+2998917460.index
+156868155.index
+2518784387.index
+352728574.index
+70480170.index
+1235955235.index
+3415169252.index
+2545516859.index
+960213170.index
+819901333.index
+2862091097.index
+954308321.index
+3028693304.index
+1988477103.index

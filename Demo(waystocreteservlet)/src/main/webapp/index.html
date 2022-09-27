@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+container {
+	width: 40%;
+	margin: auto;
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+
+
+	<!-- <h2>
+		<a href="FirstServlet">First jServlet</a>
+	</h2>
+	<h2>
+		<a href="SecondServlet">SecondServlet here </a>
+	</h2> -->
+
+	<div class="container">
+		<h1>Add New Employee</h1>
+		<form action="RegisterServlet" method="post">
+			<table>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" name="name" /></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="email" name="email" /></td>
+				</tr>
+				<tr>
+					<td>Select your course :</td>
+					<td><select name="country" style="width: 150px">
+							<option>JAVA</option>
+							<option>C++</option>
+							<option>HTML</option>
+							<option>Other</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td style="text-align: right"><input type="checkbox"
+						value="checked" name="condition" /></td>
+					<td>Agree Terms and Conditions</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="Save Employee" /></td>
+				</tr>
+				<tr><td colspan="2">
+				
+
+
+					<input type="reset" value="Reset" />
+					</td></tr>
+				</div>
+			</table>
+		</form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Demo(waystocreteservlet)</display-name>
+  <servlet>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.servlets.FirstServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.servlets.SecondServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>succes</servlet-name>
+    <servlet-class>com.servlets.SuccesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>s1</servlet-name>
+    <servlet-class>com.attr.s1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s1</servlet-name>
+    <url-pattern>/s1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>s2</servlet-name>
+    <servlet-class>com.attr.s2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s2</servlet-name>
+    <url-pattern>/s2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>succes</servlet-name>
+    <url-pattern>/succes</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+</web-app>

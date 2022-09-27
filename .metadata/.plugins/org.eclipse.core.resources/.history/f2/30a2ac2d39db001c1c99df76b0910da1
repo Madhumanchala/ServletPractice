@@ -1,0 +1,85 @@
+package com.shehzaad;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.security.MessageDigest;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+@WebServlet("/newPassword")
+public class NewPassword extends HttpServlet {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		HttpSession httpsession = request.getSession();
+		
+		String newPassword = request.getParameter("password");
+
+		try {
+			MessageDigest m = MessageDigest.getInstance("MD5");
+			m.update(newPassword.getBytes());
+			byte[] bytes = m.digest();
+			StringBuilder s = new StringBuilder();
+			for (int i = 0; i < bytes.length; i++) {
+				s.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+			}
+			newPassword = s.toString();
+			System.out.println("============= " + newPassword);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		String confPassword = request.getParameter("confPassword");
+
+		try {
+			MessageDigest m = MessageDigest.getInstance("MD5");
+			m.update(confPassword.getBytes());
+			byte[] bytes = m.digest();
+			StringBuilder s = new StringBuilder();
+			for (int i = 0; i < bytes.length; i++) {
+				s.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+			}
+			confPassword = s.toString();
+			System.out.println("============= " + confPassword);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		RequestDispatcher dispatcher;
+		if (newPassword != null && confPassword != null && newPassword.equals(confPassword)) {
+			try {
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bookstore", "admin",
+						"comunus@123");
+				PreparedStatement ps = con.prepareStatement("update user905 set password = ? where email = ? ");
+				ps.setString(1, newPassword);
+				String s = (String) httpsession.getAttribute("email");
+				System.out.println(s);
+				ps.setString(2, s);
+
+				int rowCount = ps.executeUpdate();
+				System.out.println(rowCount);
+				if (rowCount > 0) {
+					System.out.println("sjkbhjksd");
+					out.println("");
+					//response.sendRedirect("Login.html");
+
+				} else {
+					request.setAttribute("status", "resetFailed");
+					dispatcher = request.getRequestDispatcher("Login.html");
+				}
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
